@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    
+    <div class="app">
+        <div class="app__cont">
+            <div class="forms">
+                <div class="form__cont form__cont_1">
+                    <div class="header">
+                        <div class="header__info">
+                            <h3 class="header__steps">Step 1 / 3</h3>
+                            <h4 class="header__steps_tell">Tell us who you are</h4>
+                        </div>
+                    </div>
+                    <form class="form" action="#">
+                        <div class="form__inps">
+                            <input class="input JustToBe" type="text" name="firstName" placeholder="First name">
+                            <input class="input JustToBe" type="text" name="lastName" placeholder="Last name">
+                            <select class="input form__select" name="country">
+                                <option value="">Choose your country</option>
+                                <option value="Armenia">Armenia</option>
+                                <option value="Russia">Russia</option>
+                                <option value="England">England</option>
+                                <option value="France">France</option>
+                            </select>
+                            <input class="input JustToBe form__city" type="text" name="city" placeholder="City">
+                            <input class="input JustToBe form__address" type="text" name="address" placeholder="Address">
+                            <input class="input JustToBe form__postal" type="number"  name="postal" placeholder="Postal code">
+                        </div>
+                        <div class="form__info">
+                            <input class="form__cont1_check" type="checkbox">
+                            <h3 class="form__info_text">Use filled data for shipping</h3>
+                        </div>
+                        <div class="form__inps">
+                            <select class="input form__select" name="countryShip">
+                                <option value="">Choose shipping country</option>
+                                <option value="Armenia">Armenia</option>
+                                <option value="Russia">Russia</option>
+                                <option value="England">England</option>
+                                <option value="France">France</option>
+                            </select>
+                            <input class="input JustToBe form__city" type="text" name="cityShip" placeholder="Shipping city">
+                            <input class="input JustToBe form__address" type="text" name="addressShip" placeholder="Shipping address">
+                            <input class="input JustToBe form__postal" type="text" name="postalShip" placeholder="Shipping postal code">
+                        </div>
+                        <div class="form__btn">
+                            <button class="btn form1__btn-next btn-disabled" type="submit">Next</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="form__cont form__cont_2">
+                    <div class="header">
+                        <div class="header__info">
+                            <h3 class="header__steps">Step 2 / 3</h3>
+                            <h4 class="header__steps_tell">Choose a package:</h4>
+                        </div>
+                    </div>
+                    <form class="form" action="#">
+                        <div class="form__inps">
+                            <input class="input email" type="email" name="email" placeholder="Email">
+                            <input class="input password" type="password" name="password" placeholder="Password">
+                            <input class="input rPassword" type="password" name="rPassword" placeholder="Repeat password">
+                        </div>
+                        <div class="form__radio">
+                            <div class="form__radio_item">
+                                <label class="form__radio_inp_label" for="#"></label>
+                                <input class="form__radio_inp" type="radio" name="form2__radio_inp">
+                                <span class="form__radio_name">Stansard Package</span>
+                            </div>
+                            <div class="form__radio_item">
+                                <label class="form__radio_inp_label" for="#"></label>
+                                <input class="form__radio_inp" type="radio" name="form2__radio_inp">
+                                <span class="form__radio_name">Premium Package</span>
+                            </div>
+                        </div>
+                        <div class="form__btn">
+                            <button class="btn form2__btn-prev" type="submit">Previous</button>
+                            <button class="btn form2__btn-next btn-disabled" type="submit">Next</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="form__cont form__cont_3">
+                    <div class="header">
+                        <div class="header__info">
+                            <h3 class="header__steps">Step 3 / 3</h3>
+                            <h4 class="header__steps_tell">Fill your credit card details</h4>
+                        </div>
+                    </div>
+                    <form class="form" action="#">
+                        <div class="form__inps">
+                            <input class="input visa" type="text" name="visa" placeholder="4345 3454 3543 4345" maxlength="19">
+                            <input class="input JustToBe fullName" type="text" name="fullName" placeholder="aaa" maxlength="100">
+                            <input class="input cardCVC" type="number" name="cardCVC" placeholder="123">
+                            <input class="input cardDate" type="text" name="cardDate" placeholder="12/05/2025">
+                        </div>
+                        <div class="form__btn">
+                            <button class="btn form3__btn-prev" type="submit">Previous</button>
+                            <button class="btn form3__btn-next btn-disabled" type="submit">Next</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>

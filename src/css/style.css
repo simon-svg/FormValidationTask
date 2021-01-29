@@ -1,0 +1,128 @@
+html{
+    font-family: sans-serif;
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.app__cont{
+    width: 700px;
+}
+.forms{
+    position: relative;
+}
+.form__cont{
+    width: 100%;
+}
+.form__cont_2,
+.form__cont_3{
+    display: none;
+}
+.header{
+    width: 100%;
+    background-color: #fbfbfb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header__steps_tell{
+    margin-top: 10px;
+}
+.header__steps{
+    font-weight: 600;
+    font-size: 20px;
+}
+.form{
+    width: 100%;
+    padding: 0 20px 20px;
+    background-color: #f5f5f5;
+}
+.form__imps{
+    width: 100%;
+}
+.input{
+    padding: 5px 10px;
+    width: 100%;
+    outline: none;
+    margin-top: 20px;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.input-wrong{
+    border: 2px solid #ff0000;
+}
+.input-good{
+    border: 2px solid #00bb2f;
+}
+.form__info{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.form__cont1_check{
+    margin: 0 10px 0 0;
+}
+.form__info_text{
+    font-size: 15px;
+    font-weight: 700;
+}
+.form__btn,
+.form__radio{
+    margin-top: 20px;
+}
+.btn{
+    color: #ffffff;
+    background-color: rgb(0, 195, 255);
+    width: 80px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: background-color ease .3s;
+    -webkit-transition: background-color ease .3s;
+    -moz-transition: background-color ease .3s;
+    -ms-transition: background-color ease .3s;
+    -o-transition: background-color ease .3s;
+}
+.btn:hover{
+    background-color: rgba(0, 195, 255, 0.733);
+}
+.btn-disabled{
+    opacity: 0.4;
+    pointer-events: none;
+}
+.form__radio_item,
+.form__radio_inp{
+    position: relative;
+}
+.form__radio_inp{
+    z-index: 2;
+    cursor: pointer;
+}
+.form__radio_inp_label{
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 3px;
+    border: 2px solid red;
+    z-index: 0;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.form__radio_item.form__radio_item:last-child{
+    margin-top: 5px;
+}
