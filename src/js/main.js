@@ -49,7 +49,7 @@ form2BtnN.addEventListener("click", (e) => {
 form3BtnN.addEventListener("click", (e) => {
     forms[0].style.display = "none";
     forms[1].style.display = "none";
-    alert("data is in the console )");
+    alert("data is in the console and registration was successful ☺");
     console.log(data)
 })
 form2BtnP.addEventListener("click", (e) => {

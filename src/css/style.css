@@ -3,7 +3,7 @@ html{
 }
 
 .app{
-    height: 100vh;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,10 +36,19 @@ html{
     font-weight: 600;
     font-size: 20px;
 }
+.icon{
+    font-size: 35px;
+    color: #afafaf;
+}
+
+/*
+forms
+*/
+
 .form{
     width: 100%;
     padding: 0 20px 20px;
-    background-color: #f5f5f5;
+    background-color: #eeeeee;
 }
 .form__imps{
     width: 100%;
@@ -125,4 +134,49 @@ html{
 }
 .form__radio_item.form__radio_item:last-child{
     margin-top: 5px;
+}
+.input-visa__cont{
+    position: relative;
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+}
+.visa{
+    margin: 0;
+}
+.icon-visa{
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+
+
+
+/*
+responsive
+*/
+
+@media screen and (max-width: 750px){
+    .app{
+        padding: 20px 0;
+    }
+    .app__cont{
+        width: calc(100% - 40px);
+    }
+}
+@media screen and (max-width: 400px){
+    .input,
+    .form__info,
+    .form__btn,
+    .form__radio,
+    .input-visa__cont{
+        margin-top: 12px;
+    }
 }
