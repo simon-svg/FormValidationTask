@@ -179,4 +179,7 @@ responsive
     .input-visa__cont{
         margin-top: 12px;
     }
+    .visa{
+        margin: 0;
+    }
 }
