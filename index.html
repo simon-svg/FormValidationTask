@@ -44,8 +44,8 @@
                                 placeholder="Postal code">
                         </div>
                         <div class="form__info">
-                            <input class="form__cont1_check" type="checkbox">
-                            <h3 class="form__info_text">Use filled data for shipping</h3>
+                            <input class="form__cont1_check" id="use-data" type="checkbox">
+                            <label class="form__info_text" for="use-data">Use filled data for shipping</label>
                         </div>
                         <div class="form__inps">
                             <select class="input form__select" name="countryShip">
@@ -88,14 +88,14 @@
                         </div>
                         <div class="form__radio">
                             <div class="form__radio_item">
-                                <label class="form__radio_inp_label" for="#"></label>
-                                <input class="form__radio_inp" type="radio" name="form2__radio_inp">
-                                <span class="form__radio_name">Stansard Package</span>
+                                <div class="form__radio_inp_label"></div>
+                                <input class="form__radio_inp" id="standard" type="radio" name="form2__radio_inp">
+                                <label class="form__radio_name" for="standard">Standard Package</label>
                             </div>
                             <div class="form__radio_item">
-                                <label class="form__radio_inp_label" for="#"></label>
-                                <input class="form__radio_inp" type="radio" name="form2__radio_inp">
-                                <span class="form__radio_name">Premium Package</span>
+                                <div class="form__radio_inp_label"></div>
+                                <input class="form__radio_inp" id="premium" type="radio" name="form2__radio_inp">
+                                <label class="form__radio_name" for="premium">Premium Package</label>
                             </div>
                         </div>
                         <div class="form__btn">
